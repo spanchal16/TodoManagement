@@ -1,0 +1,14 @@
+<div class="container">
+    Welcome to the welcome page.
+    <br>
+    <a routerLink="/todos">Todo Page</a>
+</div>
+
+<div class="container">
+    <button class="btn btn-success" (click)="getWelcomeMsg()">Click to display welcome msg</button>
+</div>
+
+<div class="container" *ngIf="welcomeMsg">
+    <h2>Welcome to personalized message</h2>
+    {{welcomeMsg}}
+</div>
